@@ -6,7 +6,7 @@ from discord.ext import commands
 import asyncio
 
 load_dotenv()
-TOKEN = "TOKEN_HERE"
+TOKEN = os.getenv("DISCORD_TOKEN")
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 
